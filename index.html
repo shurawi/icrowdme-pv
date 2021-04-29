@@ -18,10 +18,13 @@
 <body>
   <header class="head" id="head">
     <div class="head__wrap">
-      <a class="head__logo" href="#">
-        <img src="img/head_logo.png" width="211" height="36" alt="icrowdme logo">
-      </a>
-      <nav class="head__nav">
+      <nav class="head__nav head__nav--mobile">
+        <a class="head__logo" href="#">
+          <img src="img/head_logo.png" width="211" height="36" alt="icrowdme logo">
+        </a>
+        <button class="head__btn head__btn--mobile head__btn--close" type="button" name="button">нажми меня</button>
+      </nav>
+      <nav class="head__nav head__nav--catalog">
         <ul class="head__list">
           <li class="head__item">
             <a class="head__link" href="#">HOME</a>
@@ -40,7 +43,7 @@
           </li>
         </ul>
       </nav>
-      <button class="head__btn" type="button" name="button">login</button>
+      <button class="head__btn head__btn--login" type="button" name="button">login</button>
     </div>
     <a class="head__ref" href="#head">
       <span class="visually-hidden">Наверх</span>
@@ -65,16 +68,16 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Our advantages</h2>
-      <div class="advatages__wrap wrap">
+      <div class="advatages__wrap">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--smp">
-            <button class="advantages__btn advantages__btn--smp" type="button" name="button"><span class="advantages__span">1</span>Simple</button>
+            <a class="advantages__link advantages__link--smp" href=""><span class="advantages__span">1</span>Simple</a>
           </li>
           <li class="advantages__item advantages__item--trs">
-            <button class="advantages__btn advantages__btn--trs" type="button" name="button"><span class="advantages__span">2</span>Transparent</button>
+            <a class="advantages__link advantages__link--trs" href=""><span class="advantages__span">2</span>Transparent</a>
           </li>
           <li class="advantages__item advantages__item--clb">
-            <button class="advantages__btn advantages__btn--clb" type="button" name="button"><span class="advantages__span">3</span>Collaborative</button>
+            <a class="advantages__link advantages__link--clb" href=""><span class="advantages__span">3</span>Collaborative</a>
           </li>
         </ul>
         <article class="advantages__text">
@@ -85,7 +88,7 @@
     </section>
 
     <section class="find">
-      <div class="find__wrap wrap">
+      <div class="find__wrap">
         <div class="find__item find__item--prop">
           <div class="find__text find__text--prop">
             <h3 class="find__head">Find Properties</h3>
@@ -104,7 +107,7 @@
     </section>
 
     <section class="projects">
-      <div class="projects__wrap wrap">
+      <div class="projects__wrap">
         <div class="projects__info">
           <h2 class="project__title">Featured Projects</h2>
           <p class="projects__paragraph">Brief details of new and popular projects. To view full listings, you will be required to sign up and become a member.</p>
@@ -138,6 +141,19 @@
             <a class="projects__ref" href="#">See Project Details</a>
           </li>
           <li class="projects__item projects__item--last">
+            <div class="projects__text">
+              <em class="projects__marker">new</em>
+              <em class="projects__price"><span class="projects__span">From</span> GBP  3600</em>
+              <h3 class="projects__head">Ontario Tower , LONDON</h3>
+              <p class="projects__sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="projects__cont">
+              <p class="projects__value">10% Funded</p>
+              <p class="projects__value">8 Days Left</p>
+            </div>
+            <a class="projects__ref" href="#">See Project Details</a>
+          </li>
+          <li class="projects__item projects__item--first">
             <div class="projects__text">
               <em class="projects__marker">new</em>
               <em class="projects__price"><span class="projects__span">From</span> GBP  3600</em>
@@ -188,7 +204,29 @@
     <section class="partners">
       <h2 class="visually-hidden">Our partners</h2>
       <div class="partners__wrap">
-        <img class="partners__img" src="img/partners_bg.png" width="1028" height="45" alt="">
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img src="img/partner1.jpg" alt="">
+          </li>
+          <li class="partners__item">
+            <img src="img/partner2.jpg" alt="">
+          </li>
+          <li class="partners__item">
+            <img src="img/partner3.jpg" alt="">
+          </li>
+          <li class="partners__item">
+            <img src="img/partner4.jpg" alt="">
+          </li>
+          <li class="partners__item">
+            <img src="img/partner5.jpg" alt="">
+          </li>
+          <li class="partners__item">
+            <img src="img/partner6.jpg" alt="">
+          </li>
+          <li class="partners__item">
+            <img src="img/partner7.jpg" alt="">
+          </li>
+        </ul>
       </div>
     </section>
 
