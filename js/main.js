@@ -4,10 +4,10 @@ let btnTrs = document.querySelector('.advantages__link--trs');
 let btnClb = document.querySelector('.advantages__link--clb');
 let advHead = document.querySelector('.advantages__head');
 let headBtnMobile = document.querySelector('.head__btn--mobile');
-let headNavCatalog = document.querySelector('.head__nav--menu');
+let headNavMenu = document.querySelector('.head__nav--menu');
 let links = document.querySelectorAll('a');
 
-btnSmp.addEventListener ("click", function (evt) {
+btnSmp.addEventListener ('click', function (evt) {
   evt.preventDefault();
   btnSmp.classList.add('advantages__link--active');
   btnTrs.classList.remove('advantages__link--active');
@@ -15,7 +15,7 @@ btnSmp.addEventListener ("click", function (evt) {
   advHead.style.color = '#26a6d1';
 })
 
-btnTrs.addEventListener ("click", function (evt) {
+btnTrs.addEventListener ('click', function (evt) {
   evt.preventDefault();
   btnTrs.classList.add('advantages__link--active');
   btnClb.classList.remove('advantages__link--active');
@@ -23,7 +23,7 @@ btnTrs.addEventListener ("click", function (evt) {
   advHead.style.color = '#add136';
 })
 
-btnClb.addEventListener ("click", function (evt) {
+btnClb.addEventListener ('click', function (evt) {
   evt.preventDefault();
   btnClb.classList.add('advantages__link--active');
   btnSmp.classList.remove('advantages__link--active');
@@ -36,8 +36,8 @@ headBtnMobile.addEventListener ('click', function (evt) {
   evt.preventDefault();
   headBtnMobile.classList.toggle('head__btn--close');
   headBtnMobile.classList.toggle('head__btn--open');
-  headNavCatalog.classList.toggle('head__nav--catalog');
-  headNavCatalog.classList.toggle('head__nav--close');
+  /*headNavMenu.classList.toggle('head__nav--catalog');*/
+  headNavMenu.classList.toggle('head__nav--close');
 })
 
 for (let link of links) {
