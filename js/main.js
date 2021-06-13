@@ -36,7 +36,6 @@ headBtnMobile.addEventListener ('click', function (evt) {
   evt.preventDefault();
   headBtnMobile.classList.toggle('head__btn--close');
   headBtnMobile.classList.toggle('head__btn--open');
-  /*headNavMenu.classList.toggle('head__nav--catalog');*/
   headNavMenu.classList.toggle('head__nav--close');
 })
 

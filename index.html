@@ -8,12 +8,6 @@
   <title>icrowdme</title>
   <link href="css/style.min.css" rel="stylesheet">
   <link href="img/icon_favicon32x32.png" rel="shortcut icon">
-  <link href="fonts/OpenSansLight.woff" as="font" rel="preload">
-  <link href="fonts/OpenSansLight.woff2" as="font" rel="preload">
-  <link href="fonts/OpenSansRegular.woff" as="font" rel="preload">
-  <link href="fonts/OpenSansRegular.woff2" as="font" rel="preload">
-  <link href="fonts/OpenSansSemibold.woff" as="font" rel="preload">
-  <link href="fonts/OpenSansSemibold.woff2" as="font" rel="preload">
 </head>
 <body>
   <header class="head" id="head">
@@ -181,7 +175,11 @@
               <p class="comment__sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="comment__avatar">
-              <img class="comment__img" src="img/avatar_1.png" width="60" height="60" alt="">
+              <picture>
+                <source srcset="img/avatar_1.webp" type="image/webp">
+
+                <img class="comment__img" src="img/avatar_1.jpg" width="60" height="60" alt="user's avatar">
+              </picture>
               <cite class="comment__author">David Beckham</cite>
             </div>
           </li>
@@ -191,7 +189,11 @@
               <p class="comment__sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="comment__avatar">
-              <img class="comment__img" src="img/avatar_2.png" width="60" height="60" alt="">
+              <picture>
+                <source srcset="img/avatar_2.webp" type="image/webp">
+
+                <img class="comment__img" src="img/avatar_2.jpg" width="60" height="60" alt="user's avatar">
+              </picture>
               <cite class="comment__author">David Beckham</cite>
             </div>
           </li>
@@ -206,25 +208,53 @@
       <div class="partners__wrap">
         <ul class="partners__list">
           <li class="partners__item">
-            <img src="img/partner1.jpg" alt="">
+            <picture>
+              <source srcset="img/partner1.webp" type="image/webp">
+
+              <img src="img/partner1.jpg" width="146" height="41" alt="our partner's logo - yahoo">
+            </picture>
           </li>
           <li class="partners__item">
-            <img src="img/partner2.jpg" alt="">
+            <picture>
+              <source srcset="img/partner2.webp" type="image/webp">
+
+              <img src="img/partner2.jpg" width="146" height="41" alt="our partner's logo - techninasia">
+            </picture>
           </li>
           <li class="partners__item">
-            <img src="img/partner3.jpg" alt="">
+            <picture>
+              <source srcset="img/partner3.webp" type="image/webp">
+
+              <img src="img/partner3.jpg" width="146" height="41" alt="our partner's logo - crowdsourcing.org">
+            </picture>
           </li>
           <li class="partners__item">
-            <img src="img/partner4.jpg" alt="">
+            <picture>
+              <source srcset="img/partner4.webp" type="image/webp">
+
+              <img src="img/partner4.jpg" width="130" height="41" alt="our partner's logo - crowd sourcing week">
+            </picture>
           </li>
           <li class="partners__item">
-            <img src="img/partner5.jpg" alt="">
+            <picture>
+              <source srcset="img/partner5.webp" type="image/webp">
+
+              <img src="img/partner5.jpg" width="99" height="41" alt="our partner's logo - startups HK">
+            </picture>
           </li>
           <li class="partners__item">
-            <img src="img/partner6.jpg" alt="">
+            <picture>
+              <source srcset="img/partner6.webp" type="image/webp">
+
+              <img src="img/partner6.jpg" width="166" height="42" alt="our partner's logo - imoney">
+            </picture>
           </li>
           <li class="partners__item">
-            <img src="img/partner7.jpg" alt="">
+            <picture>
+              <source srcset="img/partner7.webp" type="image/webp">
+
+              <img src="img/partner7.jpg" width="146" height="41" alt="our partner's logo - rthk">
+            </picture>
           </li>
         </ul>
       </div>
